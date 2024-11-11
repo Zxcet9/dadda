@@ -186,5 +186,24 @@ Cоздаем папки двумя разными способами
 
 ![image](https://github.com/user-attachments/assets/dafc71d3-040c-43d8-84d4-36b568ecbaf8)
 
-Ангелина помоги
-виктория метрик 8428
+Открываем grafana на сайте и также создаем dashboard, но пишем http:victoriametrics:8428
+
+Заменяем имя из "Prometheus-2" в "Vika" нажимаем на dashboards add visualition выбираем "Vika" снизу меняем на "code"
+
+В терминале пишем:
+
+`echo -e "# TYPE OILCOINT_metric1 gauge\nOILCOINT_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus`
+
+команда отправляет бинарные данные (например, метрики в формате Prometheus) на локальный сервер
+
+Потом вводим команду которая делает запрос к API для получения данных по метрике OILCOINT_metric1
+
+`curl -G 'http://localhost:8428/api/v1/query' --data-urlencode 'query=OILCOINT_metric1`
+
+Значение 0 меняем на любое другое
+
+Копируем переменную OILCOINT_metric1 и вставляем в query
+
+Нажимаем run
+
+Копируем переменную OILCOINT_metric1 и вставляем в code
