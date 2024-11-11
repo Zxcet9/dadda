@@ -170,8 +170,10 @@ Cоздаем папки двумя разными способами
 - prometheus - prometheus
      - import
 
+![image](https://github.com/user-attachments/assets/5634a32f-da1b-488c-ae00-219af3c5cef0)
 
- 
+
+
 # Делаем VictoriaMetrics
 
 Для начала зайдем в нужную папку
@@ -202,8 +204,16 @@ Cоздаем папки двумя разными способами
 
 Значение 0 меняем на любое другое
 
+![image](https://github.com/user-attachments/assets/da52ec93-dfa6-4002-9c37-c203b281b2ea)
+
 Копируем переменную OILCOINT_metric1 и вставляем в query
+
+![image](https://github.com/user-attachments/assets/0d475c04-d866-4aad-a283-bb8918513124)
+
+![image](https://github.com/user-attachments/assets/6ded36ce-8b1a-4b27-95fa-5cb44944b28a)
 
 Нажимаем run
 
 Копируем переменную OILCOINT_metric1 и вставляем в code
+
+![image](https://github.com/user-attachments/assets/ef98f311-d20c-491f-a509-5d95ee7ad8c4)
