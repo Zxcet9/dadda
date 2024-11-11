@@ -139,7 +139,7 @@ Cоздаем папки двумя разными способами
 
 Заходим в другую папку 
 
-`sudo cd /mnt/common_volume/swarm/grafana/config`
+`cd /mnt/common_volume/swarm/grafana/config/`
 
 Открываем файл prometheus.yaml в текстовом редакторе vi с правами суперпользователя
 
@@ -155,14 +155,28 @@ Cоздаем папки двумя разными способами
 
 # Делаем grafana на сайте
 
-Заходим на сайт localhost:3000
+- Заходим на сайт localhost:3000
 
-User и Password - admin
+- User и Password - admin, потом где он предлагает установить пароль, нажимаем - скип
 
-Ангелина помоги 
+- Dashboards - create dashboard - configure a new data source - prometheus
+
+Connection: http://prometheus:9090
+
+Authentication - basic authentication - admin admin
+
+save test
+
+- Dashboards - import dashboard
+
+Find and import... - 1860 - load
+
+- prometheus - prometheus
+
+import
 
 
-
+ 
 # Делаем VictoriaMetrics
 
 Для начала зайдем в нужную папку
