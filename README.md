@@ -186,7 +186,7 @@ Cоздаем папки двумя разными способами
 
 ![image](https://github.com/user-attachments/assets/dafc71d3-040c-43d8-84d4-36b568ecbaf8)
 
-Открываем grafana на сайте и также создаем dashboard, но пишем http:victoriametrics:8428
+Открываем grafana на сайте и также создаем dashboard, но пишем http://victoriametrics:8428
 
 Заменяем имя из "Prometheus-2" в "Vika" нажимаем на dashboards add visualition выбираем "Vika" снизу меняем на "code"
 
@@ -198,7 +198,7 @@ Cоздаем папки двумя разными способами
 
 Потом вводим команду которая делает запрос к API для получения данных по метрике OILCOINT_metric1
 
-`curl -G 'http://localhost:8428/api/v1/query' --data-urlencode 'query=OILCOINT_metric1`
+`curl -G 'http://localhost:8428/api/v1/query' --data-urlencode 'query=OILCOINT_metric1'`
 
 Значение 0 меняем на любое другое
 
