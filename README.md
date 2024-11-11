@@ -160,20 +160,15 @@ Cоздаем папки двумя разными способами
 - User и Password - admin, потом где он предлагает установить пароль, нажимаем - скип
 
 - Dashboards - create dashboard - configure a new data source - prometheus
-
- - Connection: http://prometheus:9090
-
- - Authentication - basic authentication - admin admin
-
- - save test
+     - Connection: http://prometheus:9090
+     - Authentication - basic authentication - admin admin
+     - save test
 
 - Dashboards - import dashboard
-
- - Find and import... - 1860 - load
+     - Find and import... - 1860 - load
 
 - prometheus - prometheus
-
- - import
+     - import
 
 
  
