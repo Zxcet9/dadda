@@ -157,17 +157,17 @@ Cоздаем папки двумя разными способами
 
 - Заходим на сайт localhost:3000
 
-- User и Password - admin, потом где он предлагает установить пароль, нажимаем - скип
+- Регестрируемся на сайте
+     - User и Password - admin, потом где он предлагает установить пароль, нажимаем - скип
 
-- Dashboards - create dashboard - configure a new data source - prometheus
+- Открываем Dashboards - create dashboard - configure a new data source - prometheus
      - Connection: http://prometheus:9090
      - Authentication - basic authentication - admin admin
-     - save test
+     - save and test
 
 - Dashboards - import dashboard
      - Find and import... - 1860 - load
-
-- prometheus - prometheus
+     - prometheus - prometheus
      - import
 
 ![image](https://github.com/user-attachments/assets/5634a32f-da1b-488c-ae00-219af3c5cef0)
@@ -188,7 +188,7 @@ Cоздаем папки двумя разными способами
 
 ![image](https://github.com/user-attachments/assets/dafc71d3-040c-43d8-84d4-36b568ecbaf8)
 
-Открываем grafana на сайте и также создаем dashboard, но пишем http://victoriametrics:8428
+Открываем grafana на сайте и также создаем dashboard, но в Connection пишем http://victoriametrics:8428
 
 Заменяем имя из "Prometheus-2" в "Vika" нажимаем на dashboards add visualition выбираем "Vika" снизу меняем на "code"
 
@@ -205,6 +205,8 @@ Cоздаем папки двумя разными способами
 Значение 0 меняем на любое другое
 
 ![image](https://github.com/user-attachments/assets/da52ec93-dfa6-4002-9c37-c203b281b2ea)
+
+Заходим на сайт localhost:8428 и открываем vmui
 
 Копируем переменную OILCOINT_metric1 и вставляем в query
 
