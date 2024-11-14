@@ -14,25 +14,25 @@
 
 `sudo yum install wget`
 
-![image](https://github.com/user-attachments/assets/a34c05c1-19c8-4333-b327-0e6ddbc7b1df)
+![image](https://github.com/user-attachments/assets/dbe3beb2-2aa2-4514-84f2-ba918c01b631)
 
 Скачиваем файл репозитория
 
 `sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo`
 
-![image](https://github.com/user-attachments/assets/3f5bfcff-97c0-49af-b6d6-3d5a11b5a3d6)
+![image](https://github.com/user-attachments/assets/9b835e6a-ceb6-463c-a765-c210c98ce1ee)
 
 Устанавливаем docker
 
 `sudo yum install docker-ce docker-ce-cli containerd.io`
 
-![image](https://github.com/user-attachments/assets/37e76d81-9ebd-4417-9955-c0484ce4d8a6)
+![image](https://github.com/user-attachments/assets/8513ae86-f330-4faa-b1d2-d8d95dfb3fea)
 
 Запускаем его и разрешаем автозапуск
 
 `sudo systemctl enable docker --now`
 
-![image](https://github.com/user-attachments/assets/9efa56ba-9f4d-426a-a400-cea2293f87dd)
+![image](https://github.com/user-attachments/assets/7dd7c415-0dcc-4f34-8c95-a54ea0df24b2)
 
 
 
@@ -42,7 +42,7 @@
 
 `sudo yum install curl`
 
-![image](https://github.com/user-attachments/assets/2620b22f-5a7c-42c7-9613-6f6dce4257f4)
+![image](https://github.com/user-attachments/assets/ebcc6f9d-858f-4b31-85da-661414595e5e)
 
 Объявление переменной COMVER, полученной в результате curl запроса, хранящей в себе номер последней
 версии Docker Compose
@@ -53,7 +53,7 @@
 
 `sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose`
 
-![image](https://github.com/user-attachments/assets/7d9a1df5-eb78-43c2-b8e7-b6d5bf7b3b90)
+![image](https://github.com/user-attachments/assets/448e7919-c923-4cc3-9f5c-d8acfddb78a4)
 
 Предоставление прав на выполнение файла docker-compose
 
@@ -63,7 +63,7 @@
 
 `sudo docker-compose --version`
 
-![image](https://github.com/user-attachments/assets/656ec825-f6ff-468d-809e-872692753b91)
+![image](https://github.com/user-attachments/assets/ce583dc7-7904-45df-b653-72a02343d9b9)
 
 
 
@@ -73,7 +73,7 @@
 
 `sudo yum install git`
 
-![image](https://github.com/user-attachments/assets/00fcf41a-e716-40ba-aa2e-2a1039c6dfc7)
+![image](https://github.com/user-attachments/assets/7c6ed42f-297e-4003-99d7-0641ebb8749e)
 
 Этот код скачивает содержимое репозитория skl256/grafana_stack_for_docker
 
@@ -85,7 +85,7 @@
 
 cd .. - возвращает в папку выше
 
-![image](https://github.com/user-attachments/assets/d1b08726-15ef-4a93-85a1-839e7a71598f)
+![image](https://github.com/user-attachments/assets/458f469c-9ea7-4a65-afc8-a0165d6b61a0)
 
 Cоздаем папки двумя разными способами
 
@@ -109,7 +109,7 @@ Cоздаем папки двумя разными способами
 
 `sudo mv grafana.yaml docker-compose.yaml`
 
-![image](https://github.com/user-attachments/assets/9a0c45bc-c9dd-481e-aea2-31202e07d7fa)
+![image](https://github.com/user-attachments/assets/0eff5b93-209e-4701-94b2-6fdeadc72e7b)
 
 Собрать докер (нужно запускать из папки где docker-compose.yaml)
 
@@ -117,7 +117,7 @@ Cоздаем папки двумя разными способами
 
 Опустить докер - sudo docker compose stop
 
-![image](https://github.com/user-attachments/assets/92a51c5c-8e75-435c-a8e0-7250acc3b61a)
+![image](https://github.com/user-attachments/assets/e3b10e0d-402c-40ea-a693-62eed116ef21)
 
 
 
@@ -131,7 +131,7 @@ Cоздаем папки двумя разными способами
 
 Затем в docker-compose нужно вставить node-exporter и удалить ненужные файлы (можно вставить готовый докер)
 
-![image](https://github.com/user-attachments/assets/17111ed9-5e63-4973-8217-d18cbb1bec78)
+![image](https://github.com/user-attachments/assets/259220f9-0dc4-4296-b0d2-6fbbdc34cf6b)
 
 выйти не сохраняясь из vim - `esc -> :q!`
 
@@ -145,11 +145,11 @@ Cоздаем папки двумя разными способами
 
 `sudo vi prometheus.yaml`
 
-![image](https://github.com/user-attachments/assets/6ef091ef-4843-4e46-8709-c26fb83ad51a)
+![image](https://github.com/user-attachments/assets/42c4880b-e56f-45a1-9077-8bc4972354be)
 
 Далее нужно исправить targets: на exporter:9100
 
-![image](https://github.com/user-attachments/assets/571e3003-dda1-4fa3-867c-9439e31e06d8)
+![image](https://github.com/user-attachments/assets/850c7813-b767-4cb8-a01b-5c57e168a6fc)
 
 
 
@@ -170,7 +170,7 @@ Cоздаем папки двумя разными способами
      - prometheus - prometheus
      - import
 
-![image](https://github.com/user-attachments/assets/5634a32f-da1b-488c-ae00-219af3c5cef0)
+![image](https://github.com/user-attachments/assets/d550635b-e67e-4337-bd60-b669b032f89f)
 
 
 
@@ -186,7 +186,7 @@ Cоздаем папки двумя разными способами
 
 После prometheus вставляем vmagent (но у нас уже вставлен готовый докер)
 
-![image](https://github.com/user-attachments/assets/dafc71d3-040c-43d8-84d4-36b568ecbaf8)
+![image](https://github.com/user-attachments/assets/c6d0b8ee-ebc0-425b-a0ec-a2514620506c)
 
 Открываем grafana на сайте и также создаем dashboard, но в Connection пишем http://victoriametrics:8428
 
@@ -204,18 +204,18 @@ Cоздаем папки двумя разными способами
 
 Значение 0 меняем на любое другое
 
-![image](https://github.com/user-attachments/assets/da52ec93-dfa6-4002-9c37-c203b281b2ea)
+![image](https://github.com/user-attachments/assets/3fb7d4ee-43da-47cb-aa61-204b35ad5f9e)
 
 Заходим на сайт localhost:8428 и открываем vmui
 
 Копируем переменную OILCOINT_metric1 и вставляем в query
 
-![image](https://github.com/user-attachments/assets/0d475c04-d866-4aad-a283-bb8918513124)
+![image](https://github.com/user-attachments/assets/f41a4dbe-3b33-4d13-b345-d21dadeaab1a)
 
-![image](https://github.com/user-attachments/assets/6ded36ce-8b1a-4b27-95fa-5cb44944b28a)
+![image](https://github.com/user-attachments/assets/72c330c7-1762-442d-bac5-7a38da7fd157)
 
 Нажимаем run
 
 Копируем переменную OILCOINT_metric1 и вставляем в code
 
-![image](https://github.com/user-attachments/assets/ef98f311-d20c-491f-a509-5d95ee7ad8c4)
+![image](https://github.com/user-attachments/assets/a35f9ebb-224c-4715-892f-7339d3feda31)
